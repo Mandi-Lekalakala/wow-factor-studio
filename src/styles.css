@@ -1,0 +1,141 @@
+body {
+  font-family: "PT Mono";
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  background-color: #ffffff;
+}
+
+nav div {
+  padding: 10px;
+  border-radius: 999px;
+  background-color: #e6e6e6;
+}
+
+nav a {
+  font-size: 12px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: #000;
+}
+nav a:hover {
+  background-color: #ffffff;
+  border-radius: 999px;
+}
+.heading-class {
+  text-align: center;
+}
+h1 {
+  font-size: 38px;
+  line-height: 50px;
+  padding-top: 110px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+div .services-list {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 24px;
+  margin: 30px;
+}
+
+.services-list li {
+  padding: 10px;
+  background-color: #eceaea;
+  border-radius: 999px;
+}
+
+.styled-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+
+.styled-images img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.last-sentence {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.final-touches {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.get-in-touch {
+  color: #807f81;
+  font-weight: 800;
+  font-size: 25px;
+  margin: 0;
+  padding: 5px;
+}
+
+.footer-style {
+  margin-top: 100px;
+  border-top: 1px solid #edecec;
+}
+
+.footer-style section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-style p {
+  margin: 0;
+  font-size: 11px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.footer-style ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer-style a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-style a:hover {
+  text-decoration: underline;
+}
