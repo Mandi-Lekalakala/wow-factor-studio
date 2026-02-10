@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "PT Mono";
   margin: 0;
@@ -31,7 +35,7 @@ nav div {
 
 nav a {
   font-size: 12px;
-  padding: 8px 14px;
+  padding: 6px 14px;
   text-decoration: none;
   color: #000;
 }
@@ -79,6 +83,11 @@ div .services-list {
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
+  transition: transform 0.35s ease;
+}
+
+.styled-images img:hover {
+  transform: translateY(-6px) scale(1.02);
 }
 
 .last-sentence {
@@ -101,8 +110,7 @@ div .services-list {
 }
 
 .footer-style {
-  margin-top: 100px;
-  border-top: 1px solid #edecec;
+  margin-top: 120px;
 }
 
 .footer-style section {
@@ -138,4 +146,56 @@ div .services-list {
 
 .footer-style a:hover {
   text-decoration: underline;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading-class {
+  opacity: 0;
+  animation: fadeInDown 0.8s ease forwards;
+  animation-delay: 0.15s;
+}
+
+.styled-images img {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.styled-images img.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.last-sentence .final-touches,
+.last-sentence .get-in-touch {
+  opacity: 0;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.last-sentence .final-touches {
+  transform: translateX(24px);
+}
+
+.last-sentence .get-in-touch {
+  transform: translateX(-24px);
+}
+
+.last-sentence.is-visible .final-touches,
+.last-sentence.is-visible .get-in-touch {
+  opacity: 1;
+  transform: translateX(0);
 }
