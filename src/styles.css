@@ -83,16 +83,20 @@ div .services-list {
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
+  opacity: 0;
+  transform: translateY(18px);
   transition:
     opacity 0.7s ease,
     transform 0.7s ease;
 }
 
-.styled-images img:hover {
-  transform: translateY(-6px) scale(1.02);
-}
 .styled-images img.is-visible:hover {
   transform: translateY(-6px) scale(1.02);
+}
+
+.styled-images img.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .last-sentence {
@@ -168,19 +172,6 @@ div .services-list {
   opacity: 0;
   animation: fadeInDown 0.8s ease forwards;
   animation-delay: 0.15s;
-}
-
-.styled-images img {
-  opacity: 0;
-  transform: translateY(18px);
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
-}
-
-.styled-images img.is-visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .last-sentence .final-touches,
