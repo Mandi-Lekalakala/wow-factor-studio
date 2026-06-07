@@ -3,6 +3,7 @@
 WOW Studio Factor is a business-card style website built as focused JavaScript (ES6) practice to strengthen core frontend fundamentals.
 The project emphasizes DOM manipulation, interactive UI logic, and scroll-based animations — all implemented using vanilla JavaScript without frameworks.
 
+![Homepage 1](./assets/homepage-1.png)
 ---
 
 ## Tech Stack
@@ -30,7 +31,4 @@ This project was intentionally built to reinforce how JavaScript directly contro
 
 ---
 
-## Preview
-
-![Homepage 1](./assets/homepage-1.png)
 ![Homepage 2](./assets/homepage-2.png)
